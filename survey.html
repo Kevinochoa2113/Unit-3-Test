@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Kevin Ochoa Garcia">
+    <!---^^^^^THIS IS REQUIRED FOR OUR GRADES IN THE FUTURE-->
+    <meta name="description" content="This is our first ever wesbite project. Fill out forms, sumbit items,and take quizes/surveys. Click for more information!">
+
+    <meta property="og:image" content="KevinLogo.png">
+    <meta property="og:title" content="Unit 2 Test">
+    <meta property="og:description" content="This is our first ever wesbite project. Fill out forms, sumbit items,and take quizes/surveys. Click for more information!">
+
+    <title>Survey</title>
+    <link zrel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/KevinLogo.png" type="image/x-icon">
+</head>
+
+<body style="background-image: url(media/lightBackground.png);">
+
+    <header>
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <ul>
+                <li><a href ="index.html">Home Page</a></li>
+                <li><a href ="quiz.html">Quiz</a></li>
+                <li><a href ="survey.html">Survey</a></li>
+            </ul>
+        </fieldset>
+        <h1>Thank You!</h1>
+        </header>
+        <main>
+            <p>We appreciate you visiting our site.<em> Without users like you we could not continue.</em>
+            <br>
+            <br>
+            <strong>PLEASE</strong> take a minute to fill out this survey and tell us how we can get better.
+        </p>
+        <form action="data.json" method="POST">
+            <fieldset>
+                <legend>Survey</legend>
+                <ul>
+                    <li><label for= "Name">Name</label> 
+                    <input type="text" id="Name" Username="user.name"></li>
+                    <li><label for= "Email">Email</label> 
+                    <input type="text" id="Email" Password="user.email"></li>
+                    <li><label for= "Phone Number">Phone Number</label> 
+                    <input type="text" id="Phone Number" Username="user.phonenumber"></li>
+                    <li><label for= "extraimprovements">Please tell us anything that we can improve on</label></li>
+                    <textarea id="extraimprovements" name="user.extraimprovements" cols="50" rows="10"></textarea>
+                    <br>
+                </ul>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

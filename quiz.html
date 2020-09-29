@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Kevin Ochoa Garcia">
+    <!---^^^^^THIS IS REQUIRED FOR OUR GRADES IN THE FUTURE-->
+    <meta name="description" content="This is our first ever wesbite project. Fill out forms, sumbit items,and take quizes/surveys. Click for more information!">
+
+    <meta property="og:image" content="KevinLogo.png">
+    <meta property="og:title" content="Unit 2 Test">
+    <meta property="og:description" content="This is our first ever wesbite project. Fill out forms, sumbit items,and take quizes/surveys. Click for more information!">
+
+    <title>Trivia Night</title>
+    <link zrel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/KevinLogo.png" type="image/x-icon">
+</head>
+
+<body style="background-image: url(media/lightBackground.png);">
+
+    <header>
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <ul>
+                <li><a href ="index.html">Home Page</a></li>
+                <li><a href ="quiz.html">Quiz</a></li>
+                <li><a href ="survey.html">Survey</a></li>
+            </ul>
+        </fieldset>
+        </header>
+        <main>
+        <form action="data.json" method="POST">
+            <fieldset>
+                <legend>Multiple Choice</legend>
+                <p>What is the <em>scientific</em> name of H<sub>2</sub>O?</p>
+                <ul>
+                    
+                    <li><input type="radio" id="air-class" name="user.scientificname"><label for="air-class">Air</label><br></li>
+                    <li><input type="radio" id="fire-class" name="user.scientificname"><label for="fire-class">Diet Coke</label><br></li>
+                    <li><input type="radio" id="earth-class" name="user.scientificname"><label for="earth-class">Earth</label><br></li>
+                    <li><input type="radio" id="water-class" name="user.scientificname"><label for="water-class">Water</label><br></li>
+                </ul>
+
+                <p>What is the <em>most popular</em> name for Dec.25<sup>th</sup>?</p>
+                    <ul>
+                    <li><input type="radio" id="holiday-christmas" name="user.holiday"><label for="holiday-christmas">Christmas</label><br></li>
+                    <li><input type="radio" id="holiday-thanksgiving" name="user.holiday"><label for="holiday-christmas">Thanksgiving</label><br></li>
+                    <li><input type="radio" id="holiday-valentinesday" name="user.holiday"><label for="holiday-valentinesday">Valentine's Day</label><br></li>
+                    <li><input type="radio" id="holiday-halloween" name="user.holiday"><label for="holiday-halloween">Halloween</label><br></li>
+                    </ul>
+                <p>Which of the following is the chemical code for <strong>sugar</strong>?</p>
+                    <ul>
+                    <li><input type="checkbox" id="chemical-one" name="user.chemical"><label for="chemical-one">C<sub>12</sub>H<sub>22</sub>O<sub>11</sub></label><br></li>
+                    <li><input type="checkbox" id="chemical-two" name="user.chemical"><label for="chemical-two">C<sub>5</sub>H<sub>10</sub>O<sub>5</sub></label><br></li>
+                    <li><input type="checkbox" id="chemical-three" name="user.chemical"><label for="chemical-three">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></label><br></li>
+                    <li><input type="checkbox" id="chemical-four" name="user.chemical"><label for="chemical-four">C<sub>11</sub>H<sub>22</sub>O<sub>11</sub></label><br></li>
+                    </ul>
+                <p>Which of the following are <strong>even</strong>?</p>
+                    <ul>
+                    <li><input type="checkbox" id="number-one" name="user.number"><label for="number-one">1<sup>st</sup></label><br></li>
+                    <li><input type="checkbox" id="number-two" name="user.number"><label for="number-two">2<sup>nd</sup></label><br></li>
+                    <li><input type="checkbox" id="number-three" name="user.number"><label for="number-three">3<sup>rd</sup></label><br></li>
+                    <li><input type="checkbox" id="number-four" name="user.number"><label for="number-four">4<sup>th</sup></label><br></li>
+                </ul>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

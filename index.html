@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Kevin Ochoa Garcia">
+    <!---^^^^^THIS IS REQUIRED FOR OUR GRADES IN THE FUTURE-->
+    <meta name="description" content="This is our first ever wesbite project. Fill out forms, sumbit items,and take quizes/surveys. Click for more information!">
+
+    <meta property="og:image" content="KevinLogo.png">
+    <meta property="og:title" content="Unit 2 Test">
+    <meta property="og:description" content="This is our first ever wesbite project. Fill out forms, sumbit items,and take quizes/surveys. Click for more information!">
+
+    <title>Home Page</title>
+    <link zrel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/KevinLogo.png" type="image/x-icon">
+</head>
+
+<body style="background-image: url(media/lightBackground.png);">
+
+    <header>
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <ul>
+                <li><a href ="index.html">Home Page</a></li>
+                <li><a href ="quiz.html">Quiz</a></li>
+                <li><a href ="survey.html">Survey</a></li>
+            </ul>
+        </fieldset>
+        <h1>Welcome to my site!</h1>
+        </header>
+        <main>
+            <p><em>On this site you can take our short quiz and you can then fill out our survey.</em>
+            <br>
+            <br>
+            <strong>only way that we can get better is by hearing what you have to say!</strong>
+        </p>
+        <h2>Log In Below</h2>
+        <form action="data.json" method="POST">
+            <fieldset>
+                <legend>User Information</legend>
+                <ul>
+                    <li><label for= "Username">User Name</label> 
+                    <input type="text" id="Username" Username="user.name"></li>
+                    <li><label for= "Password">Password</label> 
+                    <input type="text" id="Password" Password="user.password"></li>
+                    <li><label for= "User Identification Number">User Identification Number</label> 
+                    <input type="text" id="User Identification Number" Username="user.useridentificationnumber"></li>
+                    <li><label for= "Today's Date">Today's Date</label> 
+                    <input type="text" id="Today's Date" Username="user.today'sdate"></li>
+                    <button type="submit">Submit</button>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
